@@ -9,31 +9,91 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f0f0f0;
+            background-color: #f5f7fa;
+            color: #333;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #333;
+        h1, h2 {
+            color: #2c3e50;
             text-align: center;
         }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        h2 {
+            margin-top: 40px;
+            font-size: 1.8em;
+        }
         p {
-            line-height: 1.6;
-            color: #666;
+            line-height: 1.8;
+            color: #505864;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8fafc;
+            border-radius: 8px;
+        }
+        .contact-form {
+            display: grid;
+            gap: 15px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to Our New Society</h1>
-        <p>This is a simple test page for our new society project. We're working on building something amazing here!</p>
-        <p>Stay tuned for more updates as we develop this platform further.</p>
+        
+        <div class="section">
+            <h2>Our Mission</h2>
+            <p>We are dedicated to building a more connected and sustainable future for all. Through innovation and collaboration, we aim to create positive change in our communities and beyond.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Features</h2>
+            <p>• Community-driven initiatives that promote sustainable living</p>
+            <p>• Educational resources and workshops for personal growth</p>
+            <p>• Regular meetups and events to foster connections</p>
+            <p>• Collaborative projects that benefit our local communities</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
